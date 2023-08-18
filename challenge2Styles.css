@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 825px;
+  margin: 50px auto;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.4;
@@ -11,6 +20,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   background-color: #f7f7f7;
+  padding: 15px;
 }
 
 .price {
@@ -22,6 +32,11 @@ body {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.description {
+  margin: 10px 0;
 }
 
 .more-info:link,
@@ -37,11 +52,18 @@ body {
 
 .details-headline {
   text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.details-list {
+  margin-left: 20px;
 }
 
 .details-list li {
   list-style: square;
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .cart {
@@ -51,6 +73,9 @@ body {
   background-color: black;
   color: white;
   cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  border-top: 4px solid black;
 }
 
 .cart:hover {
