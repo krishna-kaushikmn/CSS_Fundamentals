@@ -24,6 +24,7 @@ h1 {
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 h3 {
@@ -69,6 +70,22 @@ li {
 
 nav {
   font-size: 18px;
+  text-align: center;
+}
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0px;
 }
 
 article {
@@ -81,8 +98,16 @@ article {
 }
 
 .container {
+  /* position: relative; */
   width: 800px;
   margin: 0 auto;
+}
+
+.profile {
+  width: 75px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .related-author {
@@ -98,11 +123,12 @@ article {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 .post-header {
   margin-bottom: 40px;
+  position: relative;
 }
 
 .post-img {
@@ -166,6 +192,38 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+button {
+  font-size: 22px;
+  cursor: pointer;
+  padding: 20px;
+
+  position: absolute;
+  top: 75px;
+  right: 0px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h3 + p::first-line {
+  color: red;
+} */
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
 
 /* LVHA */

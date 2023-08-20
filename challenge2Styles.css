@@ -17,10 +17,23 @@ body {
 }
 
 .article-headline {
+  position: relative;
   text-transform: uppercase;
   text-align: center;
   background-color: #f7f7f7;
   padding: 15px;
+}
+
+.article-headline::before {
+  position: absolute;
+  content: "SALE";
+  top: -20px;
+  left: -25px;
+  font-size: 14px;
+  color: #fff;
+  background-color: red;
+  padding: 5px 15px;
+  letter-spacing: 2px;
 }
 
 .price {
@@ -43,6 +56,8 @@ body {
 .more-info:visited {
   color: black;
   font-size: 18px;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
 .more-info:hover,
@@ -50,6 +65,35 @@ body {
   text-decoration: none;
 }
 
+.color {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.color:last-child {
+  margin-right: 0;
+}
+
+.black {
+  background-color: black;
+}
+.blue {
+  background-color: rgb(74, 74, 233);
+}
+.red {
+  background-color: rgb(212, 21, 21);
+}
+.yellow {
+  background-color: rgb(224, 196, 68);
+}
+.green {
+  background-color: rgb(89, 206, 79);
+}
+.brown {
+  background-color: rgb(214, 80, 80);
+}
 .details-headline {
   text-transform: uppercase;
   margin-top: 30px;
